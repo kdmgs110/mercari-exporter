@@ -11,7 +11,7 @@ cryptography==1.2.3
 cycler==0.10.0
 decorator==4.1.2
 entrypoints==0.2.3
-flask
+Flask
 gunicorn==19.7.1
 html5lib==1.0b10
 idna==2.0
@@ -88,3 +88,6 @@ webencodings==0.5.1
 Werkzeug==0.12.2
 widgetsnbextension==3.0.7
 WTForms==2.1
+tox
+pytest
+pytest-cov

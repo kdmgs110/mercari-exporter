@@ -58,4 +58,5 @@ def exportCSV(query):
     df.to_csv("output.csv")
 
 if __name__ == '__main__':
-    app.run(debug=True) # デバックしたときに、再ロードしなくても大丈夫になる
+    #app.run(debug=True) # デバックしたときに、再ロードしなくても大丈夫になる
+    app = Flask()

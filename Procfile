@@ -1,1 +1,0 @@
-web: gunicorn mercari-exporter:app --log-file=-

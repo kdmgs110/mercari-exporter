@@ -27,7 +27,8 @@ def post():
 
 def exportCSV(query):
     #browser = webdriver.Chrome(executable_path='/mnt/c/workspace/pydev/chromedriver.exe') #ローカル
-    browser = webdriver.PhantomJS()#heroku
+    browser = webdriver.Chrome() #ローカル
+    #browser = webdriver.PhantomJS()#heroku
     df = pandas.read_csv('default.csv', index_col=0)
     query = query
     browser.get("https://www.mercari.com/jp/search/?sort_order=price_desc&keyword={}&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=".format(query))
